@@ -1,19 +1,19 @@
 # RESTful API for movies
 
 ## 1. Create folder structure, virtualenv and activate env
-`$ mkdir fynd && cd fynd`
-`$ python3.6 -m venv venv-fynd`
-`$ source venv-fynd/bin/activate`
+- `$ mkdir fynd && cd fynd`
+- `$ python3.6 -m venv venv-fynd`
+- `$ source venv-fynd/bin/activate`
 
 ## 2. Installation, Initialization:
-`$ pip install django djangorestframework`
-`$ django-admin startproject data_gallery_project`
-`$ cd data_gallery_project/`
-`$ django-admin startapp movies`
-`$ pip freeze > requirements.txt`
-`$ python manage.py runserver`  <!-- to check installation -->
-`$ python manage.py migrate`
-`$ python manage.py createsuperuser --email admin@example.com --username admin`
+- `$ pip install django djangorestframework`
+- `$ django-admin startproject data_gallery_project`
+- `$ cd data_gallery_project/`
+- `$ django-admin startapp movies`
+- `$ pip freeze > requirements.txt`
+- `$ python manage.py runserver`  <!-- to check installation -->
+- `$ python manage.py migrate`
+- `$ python manage.py createsuperuser --email admin@example.com --username admin`
 
 ## 3. Django routine:
 - Added entry in main `urls.py` file.
@@ -36,3 +36,5 @@
 - Search functionality
 - Patch/Update implementation
 - Documenting APIs with swagger
+- Proper response after POST, PUT, PATCH operation.
+- Documenting future scalability use cases

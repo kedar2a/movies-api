@@ -1,1 +1,1 @@
-web: gunicorn data_gallery_project.wsgi
+web: gunicorn data_gallery_project.wsgi --log-file -

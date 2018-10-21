@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'xlie&&t#-2qnjm$$-*+mal*pn0aa%j=79x@vhbhfpim6_uxpc)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [*, 'movie-gallery.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'movie-gallery.herokuapp.com']
 
 
 # Application definition

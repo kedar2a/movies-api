@@ -4,8 +4,10 @@ import requests
 import getpass
 
 from django.core.management.base import BaseCommand, CommandError
+from data_gallery_project.settings import domain, domain_protocol
 
-url = 'http://127.0.0.1:8000/api/v1/movies/'
+
+url = domain_protocol + '://' + domain + '/api/v1/movies/'
 datafile = 'misc/imdb.json'
 
 

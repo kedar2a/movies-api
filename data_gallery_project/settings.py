@@ -130,6 +130,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+domain = os.environ.get('domain', '127.0.0.1:8000')
+domain_protocol = os.environ.get('domain_protocol', 'http')
 
 # DRF configs
 REST_FRAMEWORK = {

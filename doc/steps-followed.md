@@ -30,11 +30,29 @@
 ## 5. Importing sample data:
 - Added new command to import sample json data
 
+## 6. Heroku Deployment:
+- Create an app on Heroku.
+- Install heroku toolbelt on local system
+- Auto deployment strategy on update of: repo + branch
+- Add necessary code/files:
+    + `Procfile`
+    + `runtime.txt`
+    + Some changes in `settings.py`
+    + Defining env vars in heroku for application.
+- DB addon
+- Creating superuser: `createsuperuser`
+- Uploading data from JSON file: `bulk_upload` 
+
+
 ---
 
 ## Pending:
 - Search functionality
-- Patch/Update implementation
+- Patch/Update, delete implementation
 - Documenting APIs with swagger
 - Proper response after POST, PUT, PATCH operation.
 - Documenting future scalability use cases
+- Returning reply with proper HTTP status codes
+
+## Verify:
+- Read through DRF and check for optimal implementation.

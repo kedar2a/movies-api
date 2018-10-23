@@ -58,3 +58,17 @@ class MovieCreateSerializer(serializers.ModelSerializer):
             instance.genre.add(genre_obj[0])
 
         return instance
+
+    # needs to rework with proper understanding
+    # def update(self, instance, validated_data):
+    #     director = validated_data.pop('director')
+    #     dir_obj = MovieDirector.objects.get_or_create(director=director.strip())
+    #     validated_data['director'] = dir_obj[0]
+    #     genre_list = validated_data.pop('genre')
+    #     Movie.objects.filter(id=instance.id).update(**validated_data)
+    #     movie_instance = Movie.objects.get(pk=instance.id)
+    #     # needs to raise/handle unique contraint error
+    #     # for genre in genre_list[0].split(','):
+    #     #     genre_obj = MovieGenre.objects.get_or_create(genre=genre.strip())
+    #     #     movie_instance.genre.add(genre_obj[0])
+    #     return movie_instance
